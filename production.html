@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Testar botão</title>
+</head>
+
+<body>
+  <div
+    style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
+    <p style="text-align: center; font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Para
+      adicionar seu botão do widget coloque o <br>parâmetro
+      <b>id-yunique=<span style="color: blue;">{id do botao}</span></b>
+    </p>
+    <p style="text-align: center; font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <b>Exemplo:</b><br>
+      https://guzin-dev.github.io/OpensWidget/production?id-yunique=b75c53b6-8028-4a88-9c48-38924e41684c
+    </p>
+  </div>
+  <script>
+    (function (y, u, n, i, q) {
+      const script = u.createElement("script"); script.src = n; script.defer = 'defer'; script.type = 'module';
+      const div = u.createElement("div"); div.id = i; u.body.append(div); u.head.append(script);
+      localStorage.setItem("@id-yunique", window.location.href.split("id-yunique=")[1]);
+    })(window, document, "https://yunique-app.opens.com.br/widget", "yunique-chat-app");
+  </script>
+</body>
+
+</html>
