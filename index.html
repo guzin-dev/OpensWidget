@@ -18,14 +18,22 @@
       <button style="padding: 0.5rem; border-radius: 0.4rem; cursor: pointer;">Quero testar botão em teste</button>
     </a>
   </div>
-  <script>
-    (function (p, l, i, q, j, s) {
-      p._pliqStt = { surveyUrl: 'e9034e8b-4270-4b90-8e66-b2f66ce4cafd', key: 'tiago.zimmermann@opens.com.br' };
-      j = l.getElementsByTagName('head')[0]; s = l.createElement('script');
-      s.async = 1; s.src = i + q.split(';')[0]; j.appendChild(s);
-      s = l.createElement('link'); s.rel = 'stylesheet'; s.href = i + q.split(';')[1]; j.appendChild(s);
-    })(window, document, 'https://pliqdrive.blob.core.windows.net/pliqdrive/App/Plugin/app', '.js;.css');
-  </script>
 </body>
+
+<script>
+  (function (p, l, i, q, j, s) {
+    p._pliqStt = {
+      token: 'ab571367-d8b2-4521-b85b-ab1a30b29890',
+      log: true,
+      blockBackground: false,
+      timerButtonClose: 0,
+      position: 'full-screen'
+    };
+    j = l.getElementsByTagName('head')[0]; s = l.createElement('script');
+    s.async = 1; s.src = i + q.split(';')[0]; j.appendChild(s);
+    s = l.createElement('link'); s.rel = 'stylesheet';
+    s.href = i + q.split(';')[1]; j.appendChild(s);
+  })(window, document, 'https://pliqdrive.blob.core.windows.net/sandbox/App/Plugin/v4/pliq', '.js;.css');
+</script>
 
 </html>
