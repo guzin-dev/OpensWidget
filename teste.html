@@ -22,15 +22,11 @@
     </p>
   </div>
   <script>
-    postContactToken().then((data) => {
-      document.cookie = `@bt-yunique=${data.token}`;
-      localStorage.setItem("@cid-yunique", data.contactId);
-      (function (y, u, n, i, q) {
-        const script = u.createElement("script"); script.src = n; script.defer = 'defer'; script.type = 'module';
-        const div = u.createElement("div"); div.id = i; u.body.append(div); u.head.append(script);
-        localStorage.setItem("@id-yunique", window.location.href.split("id-yunique=")[1]);
-      })(window, document, "https://yunique-app.test.opens.com.br/widget", "yunique-chat-app");
-    });
+    (function (y, u, n, i, q) {
+      const script = u.createElement("script"); script.src = n; script.defer = 'defer'; script.type = 'module';
+      const div = u.createElement("div"); div.id = i; u.body.append(div); u.head.append(script);
+      localStorage.setItem("@id-yunique", window.location.href.split("id-yunique=")[1]);
+    })(window, document, "https://yunique-app.test.opens.com.br/widget", "yunique-chat-app");
   </script>
 </body>
 
